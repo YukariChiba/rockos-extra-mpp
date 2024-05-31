@@ -1,0 +1,14 @@
+Source: eswin-ffmpeg-lib
+Section: misc
+Priority: optional
+Maintainer: Han Gao <gaohan@iscas.ac.cn>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: eswin-ffmpeg-lib
+Architecture: riscv64
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: eswin-ffmpeg-lib for RockOS
+
