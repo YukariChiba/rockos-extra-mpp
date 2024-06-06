@@ -51,7 +51,6 @@ extern "C" {
 #include <es_sys_memory.h>
 #else
 #include "es-dma-buf.h"
-#include "dwl_list.h"
 #endif
 #endif
 
@@ -139,13 +138,6 @@ enum DWLDmaBufType {
   DWL_DMA_BUF_TYPE_LOCAL = 0, /* default type, free all resource */
   DWL_DMA_BUF_TYPE_OUTGOING = 1, /* es-dma-buf will be sent to other processes */
   DWL_DMA_BUF_TYPE_MAX,
-};
-
-struct DWLMemHeapInfo {
-  struct list_head mem_list;
-  es_dma_buf *dma_buf;
-  u32 *virtual_address; /**< Pointer to the virtual address of stream linear buffer */
-  addr_t bus_address;
 };
 #endif
 #endif

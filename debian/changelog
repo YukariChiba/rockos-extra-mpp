@@ -1,5 +1,11 @@
-eswin-ffmpeg-lib (2024.05.31) unstable; urgency=medium
+eswin-ffmpeg-lib (2024.06.06+0rockos1) unstable; urgency=medium
+
+  * Update eswin-ffmpeg-lib
+
+ -- Han Gao <gaohan@iscas.ac.cn>  Thu, 06 Jun 2024 16:03:43 +0800
+
+eswin-ffmpeg-lib (2024.05.31+0rockos1) unstable; urgency=medium
 
   * eswin-ffmpeg-lib
 
- -- Han Gao <gaohan@iscas.ac.cn>  Wed, 08 May 2024 18:05:39 +0800
+ -- Han Gao <gaohan@iscas.ac.cn>  Fri, 31 May 2024 21:10:09 +0800
