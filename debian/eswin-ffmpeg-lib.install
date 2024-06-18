@@ -38,4 +38,4 @@
 ./usr/include/decoder/software/source/inc/dwlthread.h
 ./usr/include/decoder/software/source/inc/vp8decapi.h
 ./usr/include/decoder/software/linux/dwl/dwl_list.h
-./usr/include/video-common/es-dma-buf.h
+./usr/include/dma/es-dma-buf.h
