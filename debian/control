@@ -12,3 +12,8 @@ Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: rockos-extra-mpp for RockOS
 
+Package: rockos-extra-codec
+Architecture: riscv64
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: rockos-extra-codec for RockOS
