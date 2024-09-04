@@ -13,6 +13,7 @@ extern "C" {
 MPP_RET mpp_enc_cfg_init(MppEncCfgPtr *cfg);
 MPP_RET mpp_enc_cfg_deinit(MppEncCfgPtr cfg);
 
+MPP_RET mpp_enc_cfg_set_u16(MppEncCfgPtr cfg, const char *name, ES_U16 val);
 MPP_RET mpp_enc_cfg_set_s32(MppEncCfgPtr cfg, const char *name, ES_S32 val);
 MPP_RET mpp_enc_cfg_set_u32(MppEncCfgPtr cfg, const char *name, ES_U32 val);
 MPP_RET mpp_enc_cfg_set_s64(MppEncCfgPtr cfg, const char *name, ES_S64 val);
@@ -20,6 +21,7 @@ MPP_RET mpp_enc_cfg_set_u64(MppEncCfgPtr cfg, const char *name, ES_U64 val);
 MPP_RET mpp_enc_cfg_set_ptr(MppEncCfgPtr cfg, const char *name, void *val);
 MPP_RET mpp_enc_cfg_set_st(MppEncCfgPtr cfg, const char *name, void *val);
 
+MPP_RET mpp_enc_cfg_get_u16(MppEncCfgPtr cfg, const char *name, ES_U32 val);
 MPP_RET mpp_enc_cfg_get_s32(MppEncCfgPtr cfg, const char *name, ES_S32 *val);
 MPP_RET mpp_enc_cfg_get_u32(MppEncCfgPtr cfg, const char *name, ES_U32 *val);
 MPP_RET mpp_enc_cfg_get_s64(MppEncCfgPtr cfg, const char *name, ES_S64 *val);

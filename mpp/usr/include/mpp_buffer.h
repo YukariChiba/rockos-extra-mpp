@@ -259,6 +259,12 @@ typedef struct MppBufferInfo_t {
 #define mpp_buffer_group_get_external(group, type, ...) \
         mpp_buffer_group_get(group, (MppBufferType)(type), MPP_BUFFER_EXTERNAL, MODULE_TAG, __FUNCTION__)
 
+#define mpp_buffer_sync_begin(buffer) \
+        mpp_buffer_sync_begin_f(buffer,__FUNCTION__)
+
+#define mpp_buffer_sync_end(buffer) \
+        mpp_buffer_sync_end_f(buffer,__FUNCTION__)
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -297,8 +303,8 @@ MPP_RET mpp_buffer_set_offset_with_caller(MppBufferPtr buffer, size_t offset, co
  * @param offset partial sync data start offset
  * @param length partial sync data length
  */
-MPP_RET mpp_buffer_sync_begin_f(MppBufferPtr buffer, ES_S32 ro, const char* caller);
-MPP_RET mpp_buffer_sync_end_f(MppBufferPtr buffer, ES_S32 ro, const char* caller);
+MPP_RET mpp_buffer_sync_begin_f(MppBufferPtr buffer, const char* caller);
+MPP_RET mpp_buffer_sync_end_f(MppBufferPtr buffer, const char* caller);
 MPP_RET mpp_buffer_sync_partial_begin_f(MppBufferPtr buffer, ES_S32 ro, ES_U32 offset, ES_U32 length, const char* caller);
 MPP_RET mpp_buffer_sync_partial_end_f(MppBufferPtr buffer, ES_S32 ro, ES_U32 offset, ES_U32 length, const char* caller);
 

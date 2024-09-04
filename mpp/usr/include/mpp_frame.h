@@ -425,6 +425,8 @@ void mpp_frame_set_buf_size(MppFramePtr frame, size_t buf_size);
 void mpp_frame_set_thumbnail_en(MppFramePtr frame, ES_U32 thumbnail_en);
 ES_U32 mpp_frame_get_thumbnail_en(const MppFramePtr frame);
 ES_U32 mpp_frame_get_group_buf_count(const MppFramePtr frame);
+ES_S64 mpp_frame_get_reordered_opaque(const MppFramePtr frame);
+void mpp_frame_set_reordered_opaque(MppFramePtr frame, ES_S64 reordered_opaque);
 
 /*
  * flow control parmeter

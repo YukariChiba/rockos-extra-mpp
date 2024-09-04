@@ -42,6 +42,8 @@ void    mpp_packet_set_pts(MppPacketPtr packet, ES_S64 pts);
 ES_S64  mpp_packet_get_pts(const MppPacketPtr packet);
 void    mpp_packet_set_dts(MppPacketPtr packet, ES_S64 dts);
 ES_S64  mpp_packet_get_dts(const MppPacketPtr packet);
+void    mpp_packet_set_reordered_opaque(MppPacketPtr packet, ES_S64 reordered_opaque);
+ES_S64  mpp_packet_get_reordered_opaque(const MppPacketPtr packet);
 
 void    mpp_packet_set_flag(MppPacketPtr packet, ES_U32 flag);
 ES_U32  mpp_packet_get_flag(const MppPacketPtr packet);

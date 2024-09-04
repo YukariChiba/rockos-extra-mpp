@@ -98,9 +98,9 @@ typedef enum {
     MPP_ENC_GET_CFG,                    /* get MppEncCfgPtr structure */
     /* runtime encoder setup control */
     MPP_ENC_SET_IDR_FRAME,              /* next frame will be encoded as intra frame */
-    MPP_ENC_GET_HDR_SYNC,               /* get vps / sps / pps which has better sync behavior parameter is MppPacket */
+    MPP_ENC_GET_HDR_SYNC,               /* get vps/sps/pps which has better sync behavior parameter is MppPacketPtr */
     MPP_ENC_SET_SEI_CFG,                /* SEI: Supplement Enhancemant Information, parameter is MppSeiMode */
-    MPP_ENC_GET_SEI_DATA,               /* SEI: Supplement Enhancemant Information, parameter is MppPacket */
+    MPP_ENC_SET_SEI_DATA,               /* SEI: Supplement Enhancemant Information, parameter is MppFramePtr */
 
     /* query encoder runtime information for encode stage */
     MPP_ENC_QUERY,                      /* set and get MppEncQueryCfg structure */
